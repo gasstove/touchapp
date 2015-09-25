@@ -57,7 +57,7 @@ Ext.define('touchapp.controller.EventConfig',{
         var jsonData = Ext.JSON.encode(formValues);
 
         Ext.Ajax.request({
-            url : 'http://52.10.166.27:8080/gs-rest-api/events',
+            url : apiUrl+'/gs-rest-api/events',
             method : 'POST',
             headers : {
                 'Content-Type' : 'application/json'

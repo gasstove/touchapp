@@ -24,7 +24,7 @@ Ext.define('touchapp.controller.UserProfile',{
         jsonData = Ext.JSON.encode(formValues);
 
         Ext.Ajax.request({
-            url : 'http://52.10.166.27:8080/gs-rest-api/users',
+            url : apiUrl+'/gs-rest-api/users',
             method : 'POST',
             headers : {
                 'Content-Type' : 'application/json',

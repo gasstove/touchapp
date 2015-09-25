@@ -39,7 +39,7 @@ Ext.define('touchapp.controller.EditGuestList',{
         var jsonData = '['+arr.join()+']';
 
         Ext.Ajax.request({
-            url : 'http://52.10.166.27:8080/gs-rest-api/userevents/event/s' + touchapp.this_event.get("id"),
+            url : apiUrl+'/gs-rest-api/userevents/event/s' + touchapp.this_event.get("id"),
             method : 'POST',
             headers : {
                 'Content-Type' : 'application/json'

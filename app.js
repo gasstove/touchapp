@@ -23,6 +23,9 @@ Ext.Loader.setConfig({
 });
 //</debug>
 
+//var apiUrl = 'http://52.10.166.27:8080';
+var apiUrl = 'http://localhost:50000';
+
 Ext.application({
     name: 'touchapp',
 
@@ -57,8 +60,7 @@ Ext.application({
         'User',
         'Media'
     ],
-    apiUrl: 'http://52.10.166.27:8080',
-    //apiUrl: 'http://localhost:50000',
+
     icon: {
         '57': 'resources/icons/Icon.png',
         '72': 'resources/icons/Icon~ipad.png',
