@@ -22,9 +22,9 @@ extend: 'Ext.TabPanel',
             iconCls: 'settings'
         },
         { xtype: 'eventusersPanel'  },
-//            { xtype: 'myMediaViewDebug'  },
+        { xtype: 'myMediaViewDebug'  },
         { xtype: 'myMediaView'  },
-//            { xtype: 'sharedMediaViewDebug' },
+        { xtype: 'sharedMediaViewDebug' },
         { xtype: 'sharedMediaView' }
     ]
 },
@@ -35,4 +35,3 @@ initialize: function(){
 }
 
 });
-

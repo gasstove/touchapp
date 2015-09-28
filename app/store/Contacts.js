@@ -11,8 +11,7 @@ Ext.define('touchapp.store.Contacts', {
         autoLoad: true,
         proxy: {
             type: 'jsonp',
-            url: 'http://52.10.166.27:8080/gs-rest-api/users/',
-            // url: touchapp.apiUrl + '/gs-rest-api/users/',
+            url: apiUrl + '/gs-rest-api/users/',
             appendId: false,
             callbackKey: 'gaswrapper'
         }

@@ -3,16 +3,16 @@ Ext.define('touchapp.view.Login', {
     xtype: 'loginview',
     requires: [ 'Ext.form.FieldSet',
                 'Ext.form.Password',
-                //'Ext.Img'
+                // 'Ext.Img',
                 'Ext.Label'],
     config: {
         title: 'Login',
         items: [
-//            {
-//                xtype: 'image',
-//                src: Ext.Viewport.getOrientation() == 'portrait' ? '../../../img/login.png' : '../../../img/login-small.png',
-//                style: Ext.Viewport.getOrientation() == 'portrait' ? 'width:80px;height:80px;margin:auto' : 'width:40px;height:40px;margin:auto'
-//            },
+          //  {
+          //      xtype: 'image',
+          //      src: Ext.Viewport.getOrientation() == 'portrait' ? '../../../img/login.png' : '../../../img/login-small.png',
+          //      style: Ext.Viewport.getOrientation() == 'portrait' ? 'width:80px;height:80px;margin:auto' : 'width:40px;height:40px;margin:auto'
+          //  },
             {
                 xtype: 'label',
                 html: 'Login failed. Please enter the correct credentials.',

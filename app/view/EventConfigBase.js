@@ -14,7 +14,7 @@ Ext.define('touchapp.view.EventConfigBase', {
         scrollable: 'vertical',
         standardSubmit: false,
         submitOnAction: false,
-        url: 'http://52.10.166.27:8080/gs-rest-api/events',
+        url: apiUrl+'/gs-rest-api/events',
 
         items: [
             {

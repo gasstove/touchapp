@@ -18,10 +18,7 @@ Ext.define('touchapp.view.event.MyMedia', {
     },
 
     initialize: function(){
-
         var me = this;
-
-        // load data
         var store = Ext.getStore('myMediasStore');
         store.getProxy().setUrl(store.getProxy().config.baseurl + "event/" + touchapp.this_event.get('id') + "/user/" + touchapp.login_user.get('id') + '/');
         store.load({
@@ -31,8 +28,6 @@ Ext.define('touchapp.view.event.MyMedia', {
             },
             scope: this
         });
-
-        // #Q SHOULD THIS BE IN LOAD CALLBACK?
         this.callParent();
     }
 
