@@ -16,7 +16,7 @@ Ext.define('touchapp.model.Media', {
             'numDislikes',
             'mediaType',
             'mediaFileName',
-            'mediaDateTaken'
+            'mediaDateTaken',
             {
                 name: 'url',
                 type: 'string',
