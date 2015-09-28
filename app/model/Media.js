@@ -2,6 +2,10 @@ Ext.define('touchapp.model.Media', {
     extend: 'Ext.data.Model',
 
     config: {
+        idProperty: 'HighliteIdProperty', // needed to prevent conflict btw touch
+                                          // and jsonp, as per
+                                          // http://stackoverflow.com/questions/11048776/sencha-touch-2-list-shows-only-last-item-retrieved-from-api
+
         fields: [
             'mediaId',
             'eventId',
@@ -12,6 +16,7 @@ Ext.define('touchapp.model.Media', {
             'numDislikes',
             'mediaType',
             'mediaFileName',
+            'mediaDateTaken'
             {
                 name: 'url',
                 type: 'string',

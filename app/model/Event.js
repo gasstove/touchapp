@@ -6,6 +6,9 @@ Ext.define('touchapp.model.Event', {
     ],
 
     config: {
+        idProperty: 'HighliteIdProperty', // needed to prevent conflict btw touch
+                                          // and jsonp, as per
+                                          // http://stackoverflow.com/questions/11048776/sencha-touch-2-list-shows-only-last-item-retrieved-from-api
 
         fields: [
             'id',
